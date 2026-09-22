@@ -4,8 +4,8 @@ public abstract class Inimigo extends Criatura{
 
     private int ataque;
 
-    public Inimigo(String nome, int ataque) {
-        super(nome, 100);
+    public Inimigo(String nome, int vida, int ataque) {
+        super(nome, vida);
         this.ataque = ataque;
     }
 
