@@ -3,7 +3,7 @@ package semester03.objectOrientedProgramming.game.model.entities;
 public class Demonion extends Inimigo {
 
     public Demonion() {
-        super("Demonion", 500, 200);
+        super("Demonion", 500, 200, new Escudo(10));
     }
 
     @Override

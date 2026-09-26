@@ -1,13 +1,14 @@
 package semester03.objectOrientedProgramming.game.model.application;
 
-import semester03.objectOrientedProgramming.game.model.entities.Criatura;
-import semester03.objectOrientedProgramming.game.model.entities.Demonion;
-import semester03.objectOrientedProgramming.game.model.entities.Jogador;
+import semester03.objectOrientedProgramming.game.model.entities.*;
 
 public class Program {
     public static void main(String[] args) {
 
-        Criatura jogador = new Jogador("Eryka");
+        Arma[] armas = {
+            new Faca(), new ArcoEFlecha(), new Porrete(), new Pistola()};
+
+        Criatura jogador = new Jogador("Eryka", armas);
         Criatura inimigo = new Demonion();
 
         System.out.println("Começa a Batalha");
