@@ -5,6 +5,14 @@ public abstract class Inimigo extends Criatura {
     private int ataque;
     private Defesa defesa = new Defesa();
 
+    public void setAtaque(int ataque) {
+        this.ataque = ataque;
+    }
+
+    public void setDefesa(Defesa defesa) {
+        this.defesa = defesa;
+    }
+
     public Inimigo(String nome, int vida, int ataque) {
         super(nome, vida);
         this.ataque = ataque;

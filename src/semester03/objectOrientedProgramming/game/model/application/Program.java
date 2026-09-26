@@ -6,10 +6,10 @@ public class Program {
     public static void main(String[] args) {
 
         Arma[] armas = {
-            new Faca(), new ArcoEFlecha(), new Porrete(), new Pistola()};
+                new Faca(), new ArcoEFlecha(), new Porrete(), new Pistola()};
 
         Criatura jogador = new Jogador("Eryka", armas);
-        Criatura inimigo = new Demonion();
+        Criatura inimigo = new Malignus();
 
         System.out.println("Começa a Batalha");
         System.out.println("################\n");
@@ -36,6 +36,8 @@ public class Program {
                 System.out.println(jogador.getNome() + " venceu.");
                 break;
             }
+            jogador.upgrade();
+            inimigo.upgrade();
         }
     }
 }
