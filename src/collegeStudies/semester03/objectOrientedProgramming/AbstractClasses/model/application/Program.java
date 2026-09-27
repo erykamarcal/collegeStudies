@@ -1,7 +1,7 @@
-package semester03.objectOrientedProgramming.AbstractClasses.model.application;
+package collegeStudies.semester03.objectOrientedProgramming.AbstractClasses.model.application;
 
-import semester03.objectOrientedProgramming.AbstractClasses.model.entities.*;
-import semester03.objectOrientedProgramming.AbstractClasses.model.interfaces.Cashier;
+import collegeStudies.semester03.objectOrientedProgramming.AbstractClasses.model.entities.*;
+import collegeStudies.semester03.objectOrientedProgramming.AbstractClasses.model.interfaces.Cashier;
 
 public class Program {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package semester03.objectOrientedProgramming.AbstractClasses.model.entities;
+package collegeStudies.semester03.objectOrientedProgramming.AbstractClasses.model.entities;
 
 public abstract class NonPerishableProduct extends Product{
     public NonPerishableProduct(String name, double price, int quantity) {

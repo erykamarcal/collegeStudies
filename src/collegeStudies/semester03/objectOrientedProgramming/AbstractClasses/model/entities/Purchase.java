@@ -1,6 +1,6 @@
-package semester03.objectOrientedProgramming.AbstractClasses.model.entities;
+package collegeStudies.semester03.objectOrientedProgramming.AbstractClasses.model.entities;
 
-import semester03.objectOrientedProgramming.AbstractClasses.model.interfaces.Cashier;
+import collegeStudies.semester03.objectOrientedProgramming.AbstractClasses.model.interfaces.Cashier;
 
 import java.util.ArrayList;
 import java.util.List;

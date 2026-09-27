@@ -1,6 +1,6 @@
-package semester03.objectOrientedProgramming.AbstractClasses.model.entities;
+package collegeStudies.semester03.objectOrientedProgramming.AbstractClasses.model.entities;
 
-import semester03.objectOrientedProgramming.AbstractClasses.model.interfaces.Validator;
+import collegeStudies.semester03.objectOrientedProgramming.AbstractClasses.model.interfaces.Validator;
 
 public abstract class PerishableProduct extends Product {
 
