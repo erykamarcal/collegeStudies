@@ -1,4 +1,12 @@
-package collegeStudies.semester03.objectOrientedProgramming.staticMethods;
+package collegeStudies.semester03.objectOrientedProgramming.staticMethods.entities;
 
-public class CienciasHumanas {
+public abstract class CienciasHumanas extends Ciencias {
+
+    public CienciasHumanas(String area) {
+        super(area);
+    }
+
+    @Override
+    public void descricao() {
+    }
 }
