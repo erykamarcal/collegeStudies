@@ -2,12 +2,12 @@ package collegeStudies.semester03.objectOrientedProgramming.staticMethods.entiti
 
 public class Historia extends CienciasHumanas {
 
-    public Historia(String area) {
+    public Historia() {
         super("História");
     }
 
     @Override
     public void descricao (){
-        System.out.print("Estudo da humanidade ao longo do tempo.");
+        System.out.println("Estudo da humanidade ao longo do tempo.");
     }
 }
