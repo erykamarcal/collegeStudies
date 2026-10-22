@@ -1,22 +1,20 @@
 package semester03.objectOrientedProgramming.game.model.entities;
 
-public class Malignus extends Inimigo {
+public class DarthMaul extends Inimigo {
 
-    public Malignus() {
-        super("Malignus", 800, 60);
+    public DarthMaul() {
+        super("Darth Maul", 800, 60);
     }
 
     @Override
     public void fraseApresentacao() {
-        System.out.println("Eu vou te matarr!!!!!!");
+        System.out.println("Finalmente vou me vingar dos Jedi!");
     }
 
     @Override
     public void fraseMorte() {
-        System.out.println("Nããããããããããão!");
+        System.out.println("Não... novamente não...");
     }
-
-    //sistema de upgrade
 
     private boolean upgraded = false;
     private int vidaCritica = 200;
@@ -25,10 +23,10 @@ public class Malignus extends Inimigo {
     public void upgrade() {
         if (!upgraded) {
             if (vidaCritica(vidaCritica)) {
-                System.out.println(getNome() + "Esta turbinado");
+                System.out.println(getNome() + " entrou em fúria!");
                 upgraded = true;
                 setDefesa(new Escudo(40));
-                setAtaque(200);
+                setAtaque(120);
             }
         }
     }

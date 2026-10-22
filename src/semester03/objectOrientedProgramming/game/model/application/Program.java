@@ -9,10 +9,11 @@ public class Program {
                 new Faca(), new ArcoEFlecha(), new Porrete(), new Pistola()};
 
         Criatura jogador = new Jogador("Eryka", armas);
-        Criatura inimigo = new Malignus();
+        Criatura inimigo = new DarthMaul();
 
-        System.out.println("Começa a Batalha");
-        System.out.println("################\n");
+        System.out.println("""
+        Começa a Batalha");
+        ################\n""");
 
         jogador.fraseApresentacao();
         inimigo.fraseApresentacao();
