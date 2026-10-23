@@ -5,18 +5,10 @@ public abstract class Inimigo extends Criatura {
     private int ataque;
     private Defesa defesa = new Defesa();
 
-    public void setAtaque(int ataque) {
-        this.ataque = ataque;
-    }
-
-    public void setDefesa(Defesa defesa) {
-        this.defesa = defesa;
-    }
-
     public Inimigo(String nome, int vida, int ataque) {
         super(nome, vida);
         this.ataque = ataque;
-        this.defesa = new Defesa(); // defesa nula
+        this.defesa = new Defesa();
     }
 
     public Inimigo(String nome, int vida, int ataque, Defesa defesa) {
@@ -24,6 +16,20 @@ public abstract class Inimigo extends Criatura {
         this.ataque = ataque;
         this.defesa = defesa;
     }
+
+    public int getAtaque() {
+        return this.ataque;
+    }
+
+    public void setAtaque(int ataque) {
+        this.ataque = ataque;
+    }
+
+
+    public void setDefesa(Defesa defesa) {
+        this.defesa = defesa;
+    }
+
 
     @Override
     public void fazAtaque(Criatura criatura) {

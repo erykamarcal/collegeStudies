@@ -25,7 +25,7 @@ public class DarthMaul extends Inimigo {
             if (vidaCritica(vidaCritica)) {
                 System.out.println(getNome() + " entrou em fúria!");
                 upgraded = true;
-                setDefesa(new Escudo(40));
+                setDefesa(new Escudo(30));
                 setAtaque(120);
             }
         }

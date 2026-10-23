@@ -20,23 +20,42 @@ public class Jogador extends Criatura {
             arma.mensagem();
             n++;
         }
-            int escolha = scanner.nextInt();
 
-            while (escolha < 1 || escolha > n - 1) {
-                System.out.print("Número inválido. Digite novamente: ");
-                escolha = scanner.nextInt();
-            }
-            armas[escolha - 1].fazAtaque(criatura);
+        int escolha = scanner.nextInt();
+
+        while (escolha < 1 || escolha > n - 1 || !armas[escolha - 1].temMunicao()) {
+            System.out.print("Opção inválida ou arma sem munição. Digite novamente: ");
+            escolha = scanner.nextInt();
+        }
+        armas[escolha - 1].fazAtaque(criatura);
+    }
+
+    public void restaurar() {
+        restaurarVida();
+        for (Arma arma : armas) {
+            arma.recarregar();
+        }
     }
 
     @Override
+    public void upgrade() {
+        System.out.println("*** UPGRADE! +300 de vida máxima e +4 de munição nas armas de longa distância ***");
+        aumentarVidaMaxima(300);
+        restaurarVida();
+        for (Arma arma : armas) {
+            arma.melhorar();
+        }
+    }
+
+
+    @Override
     public void fraseApresentacao() {
-        System.out.println("Não contavam com minha astúcia!");
+        System.out.println("Eu serei a resitência. Hoje a galaxia será livre!");
     }
 
     @Override
     public void fraseMorte() {
-        System.out.println("pipipipipipipipi");
+        System.out.println("Podem me derrubar, mas a rebelião jamais morrerá!!!...");
 
     }
 }

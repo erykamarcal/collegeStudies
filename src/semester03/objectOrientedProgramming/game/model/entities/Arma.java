@@ -14,9 +14,7 @@ public abstract class Arma {
     }
 
     public Arma(String nome, int ataque) {
-        this.nome = nome;
-        this.ataque = ataque;
-        this.chance = 100;
+        this(nome, ataque, 100);
     }
 
     public void mensagem (){
@@ -25,11 +23,21 @@ public abstract class Arma {
     public void fazAtaque (Criatura criatura){
         Random random = new Random();
         int sorteio = random.nextInt(100);
-        if (sorteio < 50) {
+        if (sorteio < this.chance) {
             criatura.tomaDano(this.ataque);
         } else {
             System.out.println("Errou!");
         }
+    }
+
+    public boolean temMunicao() {
+        return true;
+    }
+
+    public void recarregar() {
+    }
+
+    public void melhorar() {
     }
 }
 

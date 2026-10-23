@@ -2,6 +2,6 @@ package semester03.objectOrientedProgramming.game.model.entities;
 
 public class Porrete extends Arma{
     public Porrete() {
-        super("Porrete", 60, 90);
+        super("Porrete", 80, 90);
     }
 }

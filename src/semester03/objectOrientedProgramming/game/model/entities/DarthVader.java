@@ -3,7 +3,7 @@ package semester03.objectOrientedProgramming.game.model.entities;
 public class DarthVader extends Inimigo {
 
     public DarthVader() {
-        super("Darth Vader", 1000, 120, new DefesaMista(10, 15));
+        super("Darth Vader", 1000, 100, new DefesaMista(10, 10));
     }
 
     @Override

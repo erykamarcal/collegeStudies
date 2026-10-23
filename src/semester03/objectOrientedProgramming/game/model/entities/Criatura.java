@@ -4,10 +4,12 @@ public abstract class Criatura {
 
     private String nome;
     private int vida;
+    private int vidaInicial;
 
     public Criatura(String nome, int vida) {
         this.nome = nome;
         this.vida = vida;
+        this.vidaInicial = vida;
     }
 
     public abstract void fraseApresentacao();
@@ -41,6 +43,13 @@ public abstract class Criatura {
         return this.vida < valorCritico;
     }
 
+    public void restaurarVida() {
+        this.vida = this.vidaInicial;
+    }
+
+    protected void aumentarVidaMaxima(int vidaExtra) {
+        this.vidaInicial += vidaExtra;
+    }
 
     public void upgrade() {
     }

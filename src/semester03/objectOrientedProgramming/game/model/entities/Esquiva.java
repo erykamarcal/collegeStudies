@@ -5,11 +5,9 @@ import java.util.Random;
 public class Esquiva extends Defesa{
     private int chance;
 
-    Esquiva(int chance){
-        if (chance < 0){this.chance = 0;}
-        else if (chance > 100) {
-            this.chance = 100;
-        }
+    public Esquiva(int chance) {
+        if (chance < 0) chance = 0;
+        if (chance > 100) chance = 100;
         this.chance = chance;
     }
 
